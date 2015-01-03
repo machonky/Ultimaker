@@ -1,9 +1,9 @@
-M104 T0 S180	;set to min extruder temp
 M106 S0			;switch the fan off
+M109 T0 S180	;set to min extruder temp
 G21				;Set to millimeters
 G92 E0			;re-zero the extruder
-G91				;relative positioning
-G1 E0 F600
+G90				;absolute positioning
+G1 E0 F1200
 G1 E1
 G1 E2
 G1 E3
